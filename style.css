@@ -1,0 +1,156 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: "poppins", sans-serif;
+    /* background-color: #F55D3E; */
+    background-image: url(https://i.ytimg.com/vi/iQVpRxUwi8U/maxresdefault.jpg);
+}
+
+/* nav bar start */
+
+.nav {
+    background-color: #F7CB15;
+    /* width: 100vw; */
+    max-height: 50px;
+    position: sticky;
+    top: 0;
+    padding: 1em 14px;
+    color: white;
+    text-align: center;
+}
+
+.navitem {
+    display: inline-block;
+    margin: 16px;
+    padding-right: 2em;
+}
+
+.items {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dropdown:hover .dropitem {
+    display: block;
+}
+
+.dropitem {
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    color: grey;
+}
+
+.dropdown {
+}
+
+/* nav bar end */
+
+/* spaceship start */
+
+.spaceship {
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.spaceinfo {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows: 40% 60%;
+    margin: 10%;
+    grid-template-areas: 
+    "spaceintro spaceipsum1 spaceipsum1"
+    "spaceintro spaceipsum2 spaceipsum3";
+    justify-items: center;
+    align-items: center;
+    grid-gap: 5px;
+    border: 5px solid white;
+    background-color: #878E88;
+}
+
+.spaceintro {
+    grid-area: spaceintro;
+    text-align: left;
+    color: white;   
+}
+
+.spaceipsum1 {
+    grid-area: spaceipsum1;
+    justify-items: center;
+    border-bottom: 3px solid white;
+    text-align: center;
+    color: white;
+}
+
+.spaceipsum2 {
+    grid-area: spaceipsum2;
+    font-size: 14px;
+    color: white;
+}
+
+.spaceipsum3 {
+    grid-area: spaceipsum3;
+    font-size: 14px;
+    color: white;
+}
+
+/* end of spaceship */
+/* start of features */
+
+.features {
+    display: flex;
+    text-align: center;
+    padding: 3em;
+    background-color: #F7CB15;
+}
+
+.feature1 {
+    background-color:#878E88;
+    width: 33.33%;
+    height: 400px;
+    padding: 1em;
+    margin: 0px 20px;
+    border: 1px solid #878E88;
+    border-radius: 3px;
+}
+
+.feature2 {
+    background-color:#878E88;
+    width: 33.33%;
+    height: 400px;
+    padding: 1em;
+    margin: 0px 20px;
+    border: 1px solid #878E88;
+    border-radius: 3px;
+}
+
+.feature3 {
+    background-color:#878E88;
+    width: 33.33%;
+    height: 400px;
+    padding: 1em;
+    margin: 0px 20px;
+    border: 1px solid #878E88;
+    border-radius: 3px;
+}
+
+/* some cool text start */
+
+.somecooltext {
+    background-color: #F55D3E;
+    height: 500px;
+    padding: 1em;
+    color: white;
+}
+
+.cooltext {
+    margin-bottom: 50px;
+    margin-top: 80px;
+    font-size: 3em;
+}

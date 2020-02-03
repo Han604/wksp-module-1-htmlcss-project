@@ -1,0 +1,63 @@
+body {
+    font-family: 'poppins', sans-serif;
+    background-color: #F55D3E;
+}
+
+/* nav bar start */
+
+.nav {
+    display: inline-block;
+    position: relative;
+    background-color: #F7CB15;
+}
+
+.product {
+    list-style-type: none;
+}
+
+.nav-dropdown {
+    display: inline-block;
+    color: white;
+    background-color: chartreuse;
+    text-decoration: none;
+    padding: 14px 16px;
+    min-width: 128px;
+    cursor: pointer;
+    display: block;
+    list-style-type: none;
+}
+
+.list {
+    position: absolute;
+    background-color: fuchsia;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.list .item {
+    color: black;
+    padding: 14px 16px;
+    display: block;
+    list-style-type: none;
+}
+
+.item {
+    display: none;
+}
+
+.product:hover .list {
+    display: block
+}
+
+.nav .item:hover {
+    background-color: orange;
+    cursor: pointer;  
+}
+
+/* nav bar end */
+
+.spaceship {
+    width: 100vw;
+    height: 100vh;
+    background-color: #F55D3E;
+}
