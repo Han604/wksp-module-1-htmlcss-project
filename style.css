@@ -55,8 +55,6 @@ body{
 
 .spaceship {
     height: 100vh;
-    width: 100vw;
-
 }
 
 .spaceinfo {
@@ -72,6 +70,7 @@ body{
     grid-gap: 5px;
     border: 5px solid white;
     background-color: #878E88;
+    object-fit: cover;
 }
 
 .spaceintro {
@@ -111,41 +110,64 @@ body{
 }
 
 .feature1 {
-    background-color:#878E88;
+    background-color:white;
     width: 33.33%;
     height: 400px;
     padding: 1em;
     margin: 0px 20px;
-    border: 1px solid #878E88;
-    border-radius: 3px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 0px #888888;
 }
 
 .feature2 {
-    background-color:#878E88;
+    background-color:white;
     width: 33.33%;
     height: 400px;
     padding: 1em;
     margin: 0px 20px;
-    border: 1px solid #878E88;
-    border-radius: 3px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 0px #888888;
 }
 
 .feature3 {
-    background-color:#878E88;
+    background-color: white;
     width: 33.33%;
     height: 400px;
     padding: 1em;
     margin: 0px 20px;
-    border: 1px solid #878E88;
-    border-radius: 3px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 0px #888888;
 }
 
+.featurebutton {
+    background-color: #F55D3E;
+    border: none;
+    width: 90%;
+    height: 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    margin-top: 70px
+}
+
+.featurecopy {
+    margin-top: 20px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin: 20px
+}
 /* some cool text start */
 
 .somecooltext {
     background-color: #F55D3E;
     height: 500px;
-    padding: 1em;
+    padding: 50px;
     color: white;
 }
 
@@ -153,4 +175,164 @@ body{
     margin-bottom: 50px;
     margin-top: 80px;
     font-size: 3em;
+}
+
+/* sick ass gradiant happens HERE */
+
+.sickassgradient {
+    background-image: linear-gradient(to top right, #F7CB15 , #F55D3E);
+    height: 500px;
+    text-align: right;
+    color: white;
+    padding-right: 50px;
+}
+
+.headerslick {
+    font-size: 3em;
+    margin-bottom: 50px;
+    padding-top: 80px;
+}
+
+.textgradient {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.textcontainer {
+    position: relative;
+    z-index: 0;
+}
+
+.spinbutton {
+    z-index: 2;
+    background-color: white;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    padding: 30px;
+    position: absolute;
+    top: 525px;
+    margin-left: 50px;
+    cursor: pointer;
+    border: 1px dotted #F7CB15
+}
+
+.spinbutton:hover {
+    animation: spin 2s ease-in-out;
+}
+
+@keyframes spin {
+    from {
+        transform: translateX(0px) rotate(0deg);
+    }
+    to {
+        transform: translateX(200px) rotate(360deg);
+    }
+}
+
+.imagegrid{
+    display: grid;
+    grid-template-columns: repeat(3, 33.33vw);
+    grid-template-rows: 300px 300px;
+    grid-template-areas: 
+    "thugger jayski jayswim"
+    "jaybike dojarico teejay";
+    justify-items: center;
+    align-items: center;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.thugger {
+    grid-area: thugger;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.thugger:hover {
+    transform: scale(1.5);
+}
+
+.jayski {
+    grid-area: jayski;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.jayswim {
+    grid-area: jayswim;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.jaybike {
+    grid-area: jaybike;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.dojarico {
+    grid-area: dojarico;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.teejay {
+    grid-area: teejay;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* subscribe portion here */
+
+.contact {
+    background-color: #F55D3E;
+    height: 300px;
+    padding: 50px;
+    color: white;
+}
+
+.contactlink {
+    margin: 10px;
+    padding-left: 75px;
+}
+
+.contactinfo {
+    list-style-type: none;
+    margin-top: 50px;
+}
+
+.contactcontainer {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 0px 550px 50px 550px;
+}
+
+.repeatfour {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-top: 3px solid #F7CB15;
+    color: white;
+}
+
+.repeatfour:hover {
+    cursor: pointer;
+}
+
+.email {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: white;
+    background-color: white;
+    padding-left: 30px;
 }
